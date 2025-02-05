@@ -22,6 +22,11 @@ app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
+import os
+
+POPPLER_PATH = os.getenv("POPPLER_PATH", "/app/poppler/bin")
+TESSERACT_CMD = os.getenv("TESSERACT_CMD", "/usr/bin/tesseract")
+
 # Configure Tesseract
 pytesseract.pytesseract.tesseract_cmd = TESSERACT_CMD
 
