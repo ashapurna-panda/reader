@@ -5,4 +5,6 @@ pillow
 pdf2image
 werkzeug
 PyPDF2
-gunicorn  # Required for deployment
+gunicorn
+poppler-utils
+
